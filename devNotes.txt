@@ -1,0 +1,22 @@
+Correção da filtragem
+Fala galera! Beleza?
+
+Na próxima aula alguns alunos reportaram que a filtragem não está funcionando como deveria. 
+O que acontece é que em um momento muito breve das aulas o professor faz uma pequena mudança
+ que tem total impacto nessa questão e acaba passando batido por alguns alunos. 
+ A mudança que precisa ser feita é a seguinte:
+
+No arquivo "categories_meals_screen.dart" a definição do "categoryMeals" é feito inicialmente
+ assim:
+
+final categoryMeals = DUMMY_MEALS.where((meal) {
+      return meal.categories.contains(category.id);
+    }).toList();
+A mudança que é feita rapidamente e acaba sendo passada batida é a seguinte:
+
+final categoryMeals = meals.where((meal) {
+      return meal.categories.contains(category.id);
+    }).toList();
+Então basta deixar o seu código dessa forma que as mudanças da próxima aula irão funcionar perfeitamente.
+
+Bons estudos!
