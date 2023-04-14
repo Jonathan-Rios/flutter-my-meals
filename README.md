@@ -15,7 +15,7 @@
 
 <h3 align="center">Imagem prévia da aplicação</h3>
 
-![cover](.github/project-preview.gif?style=flat)
+<img src=".github/project-preview.gif?style=flat" alt="Cover" width="350" height="650">
 
 <br>
 
